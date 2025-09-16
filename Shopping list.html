@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+        .login-container {
+            max-width: 3000px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f8c1e8;
+            color: rgb(44, 13, 13);
+            border-radius: 10px;
+            text-align: left;
+        }
+        .header-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;  /* Push logo left, title center */
+    margin-bottom: 20px;
+    }
+
+    .header-container img {
+    width: 150px;  /* Increase size */
+    height: 150px; 
+    border-radius: 50%;
+    }
+
+.header-container h1 {
+        flex-grow: 1;  /* Allow heading to take remaining space */
+    text-align: center;  /* Ensure it stays centered */
+    }
+
+        legend {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            padding: 5px 10px;
+            border-bottom: 2px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="login-container">
+            
+            <!-- Heading with Image -->
+            <div class="header-container">
+                <img src="n&p logo.png" class="rounded-circle">
+                <h1 id="MyOrder" class="display-4">My Orders</h1>
+            </div>
+            
+
+            <form action="mainform.html" method="post">
+                <fieldset>
+                    <legend><h1 class="display-4">Personal Details</h1></legend>
+
+                    <label for="fname">Name:</label><br>
+                    <input type="text" id="fname" placeholder="First name" required>
+                    <input type="text" placeholder="Last name">
+                    <br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" required>
+                    <br><br>
+
+                    <label for="phone">Phone No.:</label><br>
+                    <input type="tel" id="phone" required>
+                    <br><br>
+
+                    <label for="ord">Schedule your order:</label><br>
+                    <input type="date" id="ord">
+                    <br><br>
+
+                    <label>Payment Option:</label><br>
+                    <input type="radio" name="pay" id="cod">
+                    <label for="cod">Cash On Delivery</label><br>
+
+                    <input type="radio" name="pay" id="upi">
+                    <label for="upi">UPI</label><br>
+
+                    <input type="radio" name="pay" id="card">
+                    <label for="card">Card</label>
+                    <br><br>
+
+                    <label>Product Type:</label><br>
+                    <input type="checkbox" id="handmade">
+                    <label for="handmade">Handmade Soaps</label><br>
+
+                    <input type="checkbox" id="combo">
+                    <label for="combo">Combo Soaps</label><br>
+
+                    <input type="checkbox" id="body">
+                    <label for="body">Body Scrub</label>
+                    <br><br>
+                    <label for="skin">Any Skin Allergy?</label><br>
+                    <input list="skin"><datalist id ="skin">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    </datalist><br><br>
+
+                    <label for="skin">Product:</label><br>
+                    <select id="skin" name="skin" size="4" multiple>
+                        <option value="face">Face & Body Soap Gift Hamper - Pack of 4 Soaps</option>
+                        <option value="soap">Face & Body Soap Gift Hamper for Women - Pack of 4 Soaps</option>
+                        <option value="soap1">Face & Body Soap Gift Hamper for Women - Pack of 4 Soaps</option>
+                       
+                    </select>
+                    <br><br>
+
+                    <label for="pays">Payment Screenshot:</label>
+                    <input type="file" id="pays">
+                    <br><br>
+
+                    <label for="feed">Feedback:</label><br>
+                    <textarea id="feed" name="message" rows="5" cols="30"></textarea>
+                    <br><br>
+
+                    <button type="submit" class="btn btn-danger" onclick="alert('Logged in Successfully!')">Log in</button>
+
+                </fieldset>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>

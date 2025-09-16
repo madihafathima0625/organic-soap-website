@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Soaps</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            
+            margin: 0;
+        }
+        .hero {
+            background: url('lav.jpg') no-repeat center center/cover;
+            color: #421111;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            background: #f6b7f8;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-item {
+            position: relative;
+        }
+        .menu-item a {
+            text-decoration: none;
+            color: rgb(65, 22, 22);
+            display: block;
+        }
+        .btn-custom {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px 20px;
+            background: #faf9f9;
+        }
+        .btn-custom:hover {
+            background: #f8f7f7;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fffefe;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            list-style: none;
+            padding: 0;
+        }
+        .dropdown-menu li {
+            padding: 10px;
+        }
+        .menu-item:hover .dropdown-menu {
+            display: block;
+        }
+        footer {
+            background-color: #4b184d;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 40px;
+        }
+
+        /* LOGIN POPUP (No Z-Index, No Cursor) */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .popup-box {
+            
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            position: relative;
+        }
+        .btn-close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+        }
+
+        /* BACK TO TOP BUTTON */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #eb56de;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-to-top:hover {
+            background: #f38cd1;
+        }
+        .e-img {
+      width: 150px;  /* New width */
+      height: 150px; }
+    </style>
+</head>
+<body id="top">
+
+    <!-- LOGIN POPUP -->
+    
+        
+    <div class="alert alert-dismissible fade show" style="background:#fac1f7; color:rgb(65, 29, 29); border:1px solid #5a32a3;" role="alert">
+
+                <marquee><strong>Exclusive Product has arrived.Check Out Now<span class ="badge bg-danger">new</span></strong></marquee> 
+
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        
+        <h1>Natural & Pure</h1>
+        <h4>Welcome to our soap store!</h4>
+        <img src="n&p logo.png" class="rounded-circle e-img" align="center">
+    </div>
+    <br>
+    <!-- NAVIGATION MENU -->
+    <div class="menu">
+        <div class="menu-item">
+            <a href="login.html" class="btn btn-custom">Login</a>
+        </div>
+        <div class="menu-item">
+            <button class="btn-custom">
+                <a href="#aboutus">About Us</a>
+            </button>
+        </div>
+        <div class="menu-item">
+            <a href="shop.html" class="btn btn-custom">Shop</a>
+            <ul class="dropdown-menu">
+                <li><a href="shop.html#handmade">Handmade Soaps</a></li>
+                <li><a href="shop.html#combo">Combo Soaps</a></li>
+                <li><a href="shop.html#bodyscrub">Body Scrub</a></li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <button class="btn-custom">
+                <a href="#contactus">Contact Us</a></button>
+        </div>
+        <div class="menu-item">
+            <button class="btn-custom">
+                <a href="Shopping list.html">My Orders</a></button>
+        </div>
+        <div class="menu-item">
+            <button class="btn-custom">Blogs</button>
+            <ul class="dropdown-menu">
+                <li>Beauty Tips</li>
+                <li>Natural Skincare</li>
+                <li>DIY Recipes</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ABOUT US SECTION -->
+    <div class="container mt-5">
+        <h1 id="aboutus" class="display-4">About Us</h1>
+        <p>Welcome to Natural Soaps! We are committed to providing high-quality, handmade soaps made from natural ingredients.
+        Our journey started with a passion for skincare and the desire to create chemical-free, skin-friendly products.</p>
+        <p>We began with a simple belief that everyone deserves access to gentle, natural skincare. 
+        Frustrated with harsh commercial soaps, we started crafting our own, using time-honored recipes and the purest ingredients nature provides.  
+        We're excited to share our passion with you. Discover the story behind our soaps and find your perfect bar.</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"><a href="Product details.html#face"><img src="soapf.jpg" class="rounded-thumbnail" alt="combo 1"></a></div>
+            <div class="col-md-4"><a href="Product details.html#face1"><img src="combo2.jpg" class="rounded-thumbnail" alt="combo 2"></a></div>
+            <div class="col-md-4"><a href="Product details.html#face2"><img src="combo3.jpg" class="rounded-thumbnail" alt="combo 3"></a></div>
+    </div>
+    <div class="container">
+        <iframe width="300" height="300" 
+            src="https://www.youtube.com/embed/ANYp3zygPcA" 
+            frameborder="0" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    
+    
+    
+    <!-- CONTACT SECTION -->
+    
+    <footer>
+        <address>
+            <center><h1 id="contactus" class="display-4">Contact Us</h1></center>
+
+            <p>Natural & Pure, near Jayamahal, Vasanth Nagar, Bangalore-42</p>
+            <p>Phone: 123709870</p>
+            <p>Email: Natural&Pure@gmail.com</p>
+        </address>
+    </footer>
+    
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#top" class="back-to-top">Back to Top</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
