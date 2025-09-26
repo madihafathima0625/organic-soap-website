@@ -1,6 +1,8 @@
 # Organic-soap-website
 A Mini Project to showcase a web interface for selling organic handmade soaps.
 
+Visit : [https://madihafathima0625.github.io/organic-soap-website/]
+
 <h1>Main Page</h1>
 <img width="1362" height="727" alt="image" src="https://github.com/user-attachments/assets/e1142ebd-7b03-4f0d-82ee-143b0342cdda" /><br>
 <img width="1358" height="648" alt="image" src="https://github.com/user-attachments/assets/09685123-5158-45ec-8471-65ec21d8259e" />
